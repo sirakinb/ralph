@@ -32,7 +32,7 @@ Copy the skills to your Claude config for use across all projects:
 
 ```bash
 cp -r skills/prd ~/.claude/skills/
-cp -r skills/ralph ~/.claude/skills/
+cp -r skills/prd-converter ~/.claude/skills/
 ```
 
 ## Workflow
@@ -49,10 +49,10 @@ Answer the clarifying questions. The skill saves output to `tasks/prd-[feature-n
 
 ### 2. Convert PRD to Ralph format
 
-Use the Ralph skill to convert the markdown PRD to JSON:
+Use the prd-converter skill to convert the markdown PRD to JSON:
 
 ```
-/ralph and convert tasks/prd-[feature-name].md to prd.json
+/prd-converter tasks/prd-[feature-name].md
 ```
 
 This creates `prd.json` with user stories structured for autonomous execution.
@@ -85,7 +85,7 @@ Ralph will:
 | `prd.json.example` | Example PRD format for reference |
 | `progress.txt` | Append-only learnings for future iterations |
 | `skills/prd/` | Skill for generating PRDs |
-| `skills/ralph/` | Skill for converting PRDs to JSON |
+| `skills/prd-converter/` | Skill for converting PRDs to prd.json |
 | `flowchart/` | Interactive visualization of how Ralph works |
 
 ## Flowchart

@@ -1,6 +1,6 @@
 # Ralph
 
-![Ralph](ralph.webp)
+![Ralph](ralph.jpeg)
 
 Ralph is an autonomous AI agent loop that runs [Claude Code](https://claude.ai/code) repeatedly until all PRD items are complete. Each iteration is a fresh Claude instance with clean context. Memory persists via git history, `progress.txt`, and `prd.json`.
 
